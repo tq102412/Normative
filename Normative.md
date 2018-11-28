@@ -133,7 +133,7 @@ const RED_ROSE_PRICE = 'ok'
     a．使用4个空格作为缩进，而不使用tab缩进（IDE可以进行预先设置）。
 例子：
 
-for ( $i=0;$i<$count;$i++ ) {
+for ($i=0; $i<$count; $i++) {
     echo 'test';
 }
 ```
@@ -179,13 +179,13 @@ $abc = 30;
     c．在 for 和 wiile 的循环使用中，要警惕 continue 、 break 的使用，避免产生类似 goto 的问题；
     d. 花括号不能省略如下：
     //禁止此种写法：
-		if(1===a) a=5;
+		if(1 === a) a = 5;
 		//禁止此种写法：
-		if(1===a)
-			a=5;
+		if(1 === a)
+			a = 5;
 		//必须这样写：
-		if(1===a){
-			a=5;
+		if(1 === a){
+			a = 5;
 		}
 ```
 
@@ -272,6 +272,37 @@ var obj = {
 18. 禁止使用eval函数、new Function
 19. setTimeout第一个参数禁止使用字符串，必须传函数。
 20. 禁止使用setInterval
+21. 注释的书写规范
+```
+a. 方法的注释使用如下：
+b. 单行注释应当单独写一行
+c. if else 内第一行为该分支的注释
+例子：
+/**
+ * 获取用户id
+ * @param id
+ * @returns {string}
+ */
+function getUserById(id) {
+    return "";
+}
+
+// 用户名
+var userName = "tq";
+
+if ("tq" !== userName) {
+    //如果是tq则
+
+    // tq长得帅
+    var userAge = 18;
+
+    return "tq长得帅";
+} else {
+    //如果不是tq
+    return true;
+}
+
+```
 
 ### CSS规范
 
