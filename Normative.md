@@ -424,7 +424,7 @@ font: 100%/1.6 serif;//代表：font-family:serif;font-size:100%;line-height:1.6
 - 状态管理：`src/store`
 - 公共js: `/src/util`
 - 功能模块：`/src/view`
-- 引入的js(没有node包的): `/scripte`
+- 引入的js(没有node包的): `/script`
 - node包: `node_modules`
 - 项目入口文件：`/src/app.vue`
 
