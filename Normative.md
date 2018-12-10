@@ -415,6 +415,19 @@ font: 100%/1.6 serif;//代表：font-family:serif;font-size:100%;line-height:1.6
 - 公共函数：`/Helpers`
 - 数据仓库：`/app/Repositories`
 
+
+## 前端存放规则
+
+- 静态资源：`/src/assets`
+- 公共组件：`/src/components`
+- 路由：`/src/router`
+- 状态管理：`/src/store`
+- 公共js: `/src/utils`
+- 功能模块：`/src/views`
+- 引入的js(没有node包的): `/script`
+- node包: `/node_modules`
+- 项目入口文件：`/src/app.vue`
+
 ```
 注：文件存放路径不得随意修改乱放，如有特殊原因提出讨论
 ```
