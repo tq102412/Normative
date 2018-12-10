@@ -24,7 +24,7 @@
 例如：baseDir、redRosePrice等。
 ```
 
-2. 局部变量
+2. 局部变量(废弃，经协商不在使用此规范)
 
 ```
  局部变量命名遵循以下规则：
@@ -124,6 +124,13 @@ const RED_ROSE_PRICE = 'ok'
     UserInterface
 ```
 
+13. TypeScript基础类型需要小写开头。
+```
+Interface UserInterface {
+    age: int;
+}
+```
+
 ### 书写规范
 
 1. 代码缩进
@@ -133,7 +140,7 @@ const RED_ROSE_PRICE = 'ok'
     a．使用4个空格作为缩进，而不使用tab缩进（IDE可以进行预先设置）。
 例子：
 
-for ($i=0; $i<$count; $i++) {
+for ($i = 0; $i < $count; $i++) {
     echo 'test';
 }
 ```
@@ -209,6 +216,18 @@ $abc = 30;
 $sql  = 'SELECT username,password,address,age,postcode FROM test_t ';
 $sql .= ' WHERE username=\'aaa\'';
 $res  = mysql_query($sql);
+
+function e ($oneParameter, $twoParameter, $threeParameter, $fourParameter){
+    //
+}
+
+e(
+  $one,
+  $two,
+  $three,
+  $four
+);
+
 ```
 
 8. 数字
@@ -305,7 +324,26 @@ if ("tq" !== userName) {
 ```
 
 22. 参数应该控制在5个以内
-23. 一个方法最多不超过300行代码
+23. 一个方法最多不超过100行代码
+24. 参数中的逗号需要紧贴着变量且与后面一个变量要有一个空格。
+```
+function speak(user, message) {
+    return user.name + ": " + message;
+}
+
+// 正确的写法
+speak(tq, 'czl is pig');
+// 错误的写法
+speak(tq , 'czl is pig');
+```
+
+25. TypeScript中的属性声明应当使用分号
+```
+Interface UserInterface {
+    name: string;
+    age: int;
+}
+```
 
 
 ### CSS规范
